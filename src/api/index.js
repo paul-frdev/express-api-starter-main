@@ -1,6 +1,7 @@
 const express = require('express');
 
 const emojis = require('./emojis');
+const courses = require('./courses');
 
 const router = express.Router();
 
@@ -11,5 +12,6 @@ router.get('/', (req, res) => {
 });
 
 router.use('/emojis', emojis);
+router.use('/courses', courses);
 
 module.exports = router;
